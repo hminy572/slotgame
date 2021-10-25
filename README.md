@@ -1,4 +1,6 @@
-# Slot Game!!!
+# Slot Game
+
+With Phoenix liveview, it's posibble to develop game with complex animation! This is quite revolutional, right?
 
 To play this game on localhost, 
 
