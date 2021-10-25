@@ -1,0 +1,330 @@
+defmodule LivePixel.Base do
+  use Phoenix.Component
+
+  # *********************
+  # ***  base ***********
+  # *********************
+  def base(assigns) do
+    ~H"""
+    <svg
+      phx-window-keydown="slot_key"
+      id="base"
+      viewBox="100 245 430 200"
+      width="440"
+      height="440"
+      xmlns="http://www.w3.org/2000/svg"
+      shape-rendering="crispEdges">
+      <path d="M100 130h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 140h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 140h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 150h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 150h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 150h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 150h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 160h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 160h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 160h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/><path d="M260 160h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 160h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 160h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 160h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/><path d="M460 160h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 160h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 160h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 170h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 170h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 170h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 170h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 170h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 170h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 170h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 170h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 170h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 170h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 180h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 180h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 180h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 180h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 180h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 180h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 180h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 180h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 180h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/><path d="M520 180h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 190h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/><path d="M160 190h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 190h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 190h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 190h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 190h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 190h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 190h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 190h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 190h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 200h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 200h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 200h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 200h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 200h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 200h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 200h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 200h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 200h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 200h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 210h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 210h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 210h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 210h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 210h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 210h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 210h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 210h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 210h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 210h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 220h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 220h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 220h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 220h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 220h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 220h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 220h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 220h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 220h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 220h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 230h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 230h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 230h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 230h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 230h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 230h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 230h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 230h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 230h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 230h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 240h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 240h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 240h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 240h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 240h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 240h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 240h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 240h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 240h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 240h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 250h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 250h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 250h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 250h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 250h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 250h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 250h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 250h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 250h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 250h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 260h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 260h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 260h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 260h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 260h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 260h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 260h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 260h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 260h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 260h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 270h10v10h-10z"/>
+      <path fill="#8A6F30" d="M120 270h10v10h-10z"/>
+      <path fill="#D9A066" d="M130 270h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 270h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 270h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 270h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 270h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 270h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 270h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 270h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 270h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path fill="#8A6F30" d="M500 270h10v10h-10z"/>
+      <path fill="#D9A066" d="M510 270h10v10h-10z"/>
+      <path d="M520 270h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 280h10v10h-10z"/>
+      <path fill="#8A6F30" d="M120 280h10v10h-10zm10 0h10v10h-10z"/>
+      <path fill="#D9A066" d="M140 280h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 280h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 280h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 280h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 280h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 280h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 280h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 280h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 280h10v10h-10zm10 0h10v10h-10z"/>
+      <path fill="#8A6F30" d="M490 280h10v10h-10zm10 0h10v10h-10z"/>
+      <path fill="#D9A066" d="M510 280h10v10h-10z"/>
+      <path d="M520 280h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 290h10v10h-10z"/>
+      <path fill="#8A6F30" d="M120 290h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path fill="#D9A066" d="M150 290h10v10h-10z"/>
+      <path d="M160 290h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 290h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 290h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 290h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 290h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 290h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 290h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 290h10v10h-10z"/>
+      <path fill="#8A6F30" d="M480 290h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path fill="#D9A066" d="M510 290h10v10h-10z"/>
+      <path d="M520 290h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 300h10v10h-10z"/>
+      <path fill="#8A6F30" d="M120 300h10v10h-10zm10 0h10v10h-10z"/>
+      <path fill="#D9A066" d="M140 300h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 300h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 300h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 300h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 300h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 300h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 300h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 300h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 300h10v10h-10zm10 0h10v10h-10z"/>
+      <path fill="#8A6F30" d="M490 300h10v10h-10zm10 0h10v10h-10z"/>
+      <path fill="#D9A066" d="M510 300h10v10h-10z"/>
+      <path d="M520 300h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 310h10v10h-10z"/>
+      <path fill="#8A6F30" d="M120 310h10v10h-10z"/>
+      <path fill="#D9A066" d="M130 310h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 310h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 310h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 310h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 310h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 310h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 310h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 310h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 310h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path fill="#8A6F30" d="M500 310h10v10h-10z"/>
+      <path fill="#D9A066" d="M510 310h10v10h-10z"/>
+      <path d="M520 310h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 320h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 320h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 320h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 320h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 320h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 320h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 320h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 320h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 320h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 320h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 330h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 330h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 330h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 330h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 330h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 330h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 330h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 330h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 330h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 330h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 340h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 340h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 340h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 340h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 340h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 340h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 340h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 340h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 340h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 340h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 350h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 350h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 350h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 350h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 350h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 350h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 350h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 350h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 350h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 350h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 360h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 360h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 360h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 360h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 360h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 360h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 360h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 360h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 360h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 360h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 370h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 370h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 370h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 370h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 370h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 370h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 370h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 370h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 370h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 370h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 380h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 380h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 380h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 380h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 380h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 380h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 380h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 380h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 380h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 380h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 390h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 390h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 390h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 390h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 390h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 390h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 390h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 390h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 390h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 390h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 400h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 400h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 400h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 400h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 400h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 400h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 400h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 400h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 400h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 400h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 410h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 410h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 410h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 410h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 410h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 410h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 410h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 410h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 410h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 410h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 420h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 420h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M170 420h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M260 420h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M270 420h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M360 420h10v10h-10z"/>
+      <path fill="#DBE3F5" d="M370 420h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M460 420h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 420h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 420h10v10h-10zm-420 10h10v10h-10z"/><path fill="#D9A066" d="M110 430h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M160 430h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path fill="#D9A066" d="M470 430h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 430h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 440h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 440h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 450h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 450h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 460h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 460h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 470h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 470h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 480h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 480h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 490h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 490h10v10h-10zm-420 10h10v10h-10z"/>
+      <path fill="#D9A066" d="M110 500h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+      <path d="M520 500h10v10h-10zm-420 10h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10zm10 0h10v10h-10z"/>
+    </svg>
+    """
+  end
+end
