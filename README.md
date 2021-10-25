@@ -1,4 +1,4 @@
-# Slot
+# Slot Game!!!
 
 To start your Phoenix server:
 
