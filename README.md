@@ -1,18 +1,15 @@
 # Slot Game!!!
 
-To start your Phoenix server:
+To play this game on localhost, 
 
-  * Install dependencies with `mix deps.get`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+1. git clone this repo
+2. run
+   ```
+   mix phx.server
+   ```
+3. access 
+   ```
+   http://localhost:4000/slot
+   ```
+4. enjoy!
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
